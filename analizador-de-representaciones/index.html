@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bloquea cualquier conexión a internet: la app solo usa sus propios archivos. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' file:; style-src 'self' file:; img-src data:; connect-src 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <title>Analizador de representaciones</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido" id="saltar">Saltar al contenido</a>
+
+  <header class="cabecera">
+    <p class="marca">Analizador de representaciones</p>
+    <nav aria-label="Principal">
+      <ul class="menu">
+        <li><a href="#/casos" data-vista="casos">Mis casos</a></li>
+        <li><a href="#/nuevo" data-vista="nuevo">Nuevo caso</a></li>
+        <li><a href="#/copia" data-vista="copia">Copia de seguridad</a></li>
+        <li><a href="#/ayuda" data-vista="ayuda">Cómo se usa</a></li>
+      </ul>
+    </nav>
+    <div class="letra" role="group" aria-label="Tamaño de letra">
+      <button type="button" id="letra-menos" aria-label="Reducir tamaño de letra">A−</button>
+      <span id="letra-valor" aria-live="polite">100 %</span>
+      <button type="button" id="letra-mas" aria-label="Aumentar tamaño de letra">A+</button>
+    </div>
+  </header>
+
+  <div id="aviso" class="aviso" role="status" aria-live="polite"></div>
+
+  <main id="contenido" tabindex="-1">
+    <noscript>
+      <p class="error">Esta app necesita JavaScript. Actívalo en tu navegador para usarla.</p>
+    </noscript>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
