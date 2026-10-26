@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Laboratorio de Cocina 🧪🍰</title>
+  <meta name="description" content="Recetario de química: cada receta explica el proceso químico que ocurre al cocinar.">
+  <meta name="theme-color" content="#ffd6e7">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧪</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <a class="saltar" href="#app">Saltar al contenido</a>
+
+  <!-- Burbujitas decorativas del fondo -->
+  <div class="burbujas-fondo" aria-hidden="true"></div>
+
+  <header class="barra">
+    <a class="logo" href="#/">
+      <span class="logo-icono" aria-hidden="true">🧪</span>
+      <span>Laboratorio de Cocina</span>
+    </a>
+    <nav class="menu" aria-label="Menú principal">
+      <a href="#/" data-ruta="inicio">🏠 Inicio</a>
+      <a href="#/recetas" data-ruta="recetas">🍰 Recetas</a>
+      <a href="#/glosario" data-ruta="glosario">📖 Glosario</a>
+      <a href="#/sobre" data-ruta="sobre">🎓 Proyecto</a>
+    </nav>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <!-- Menú inferior para celular -->
+  <nav class="menu-movil" aria-label="Menú">
+    <a href="#/" data-ruta="inicio"><span aria-hidden="true">🏠</span>Inicio</a>
+    <a href="#/recetas" data-ruta="recetas"><span aria-hidden="true">🍰</span>Recetas</a>
+    <a href="#/glosario" data-ruta="glosario"><span aria-hidden="true">📖</span>Glosario</a>
+    <a href="#/sobre" data-ruta="sobre"><span aria-hidden="true">🎓</span>Proyecto</a>
+  </nav>
+
+  <footer class="pie">
+    Hecho con 💖, burbujitas y mucha química ✨
+  </footer>
+
+  <!-- Datos (edítalos en la carpeta datos/) -->
+  <script src="datos/recetas.js"></script>
+  <script src="datos/glosario.js"></script>
+  <script src="datos/proyecto.js"></script>
+  <!-- La app -->
+  <script src="js/app.js"></script>
+</body>
+</html>
