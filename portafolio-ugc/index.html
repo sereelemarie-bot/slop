@@ -1,6 +1,6 @@
-<title>Serena · Portafolio UGC</title>
+<title>Serena Lemarie · Portafolio UGC</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Portafolio UGC de Serena (@serelemar): videos verticales hablados a cámara para marcas de belleza y lifestyle.">
+<meta name="description" content="Portafolio UGC de Serena Lemarie (@serelemar): videos verticales hablados a cámara para marcas de belleza y lifestyle.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=Pinyon+Script&family=DM+Sans:opsz,wght@9..40,400..700&family=DM+Mono:wght@400;500&display=swap">
@@ -54,7 +54,8 @@ nav ul a:hover{color:var(--rose)}
 /* hero */
 .hero{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;padding-block:56px 72px}
 .hero-text{min-width:0;display:flex;flex-direction:column;gap:22px}
-.name{font-family:var(--script);font-weight:400;font-size:clamp(84px,14vw,168px);line-height:.8;color:var(--rose);margin-left:-6px}
+.name{font-family:var(--script);font-weight:400;font-size:clamp(76px,12vw,150px);line-height:.85;color:var(--rose);margin-left:-6px}
+.name span{display:block;color:var(--ink);font-size:.62em;margin-left:.9em;margin-top:-.08em}
 .role{font-family:var(--display);font-size:clamp(22px,3vw,30px);line-height:1.2;font-weight:500}
 .role em{font-style:italic;color:var(--rose)}
 .lead{color:var(--muted);max-width:44ch}
@@ -91,7 +92,7 @@ section{padding-block:72px;border-top:1px solid var(--line)}
 /* sobre mí */
 .about{display:grid;grid-template-columns:.8fr 1.2fr;gap:48px;align-items:start}
 .about figure{margin:0;border-radius:22px;overflow:hidden;aspect-ratio:4/5;max-width:100%;background:var(--sage-soft)}
-.about figure img{width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block}
+.about figure img{width:100%;height:100%;object-fit:cover;object-position:58% 30%;display:block}
 .about .txt{min-width:0;display:flex;flex-direction:column;gap:18px;max-width:60ch}
 .about .txt p:first-child{font-family:var(--display);font-size:clamp(22px,2.6vw,27px);line-height:1.35}
 .facts{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:10px}
@@ -141,12 +142,15 @@ section{padding-block:72px;border-top:1px solid var(--line)}
 .links small{font-family:var(--mono);font-weight:400;opacity:.7;font-size:13px}
 @media (max-width:800px){.contact{grid-template-columns:1fr}}
 #contacto{border-top:0;padding-top:24px}
+.mail{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;padding:16px 20px;border-radius:16px;background:var(--rose);color:#fff}
+.mail .addr{font-weight:600;user-select:all;overflow-wrap:anywhere;min-width:0}
+.mail button{font:inherit;font-size:13px;font-weight:600;border:0;border-radius:999px;padding:8px 14px;background:#fff;color:#2a1b1d;cursor:pointer}
 footer{padding-block:28px 40px;text-align:center;font-size:13px;color:var(--muted);font-family:var(--mono)}
 </style>
 
 <nav aria-label="Secciones">
   <div class="wrap">
-    <a class="mark" href="#inicio">Serena</a>
+    <a class="mark" href="#inicio">Serena Lemarie</a>
     <ul>
       <li><a href="#sobre-mi">Sobre mí</a></li>
       <li><a href="#portafolio">Portafolio</a></li>
@@ -160,7 +164,7 @@ footer{padding-block:28px 40px;text-align:center;font-size:13px;color:var(--mute
   <header class="hero" id="inicio">
     <div class="hero-text">
       <span class="eyebrow">Portafolio UGC · Belleza y lifestyle</span>
-      <h1 class="name">Serena</h1>
+      <h1 class="name">Serena<span>Lemarie</span></h1>
       <p class="role">Creadora de contenido <em>UGC</em> en español</p>
       <p class="lead">Hago videos verticales hablados a cámara que suenan a recomendación de amiga, para que tu marca se sienta real en TikTok, Reels y anuncios.</p>
       <div class="actions">
@@ -181,11 +185,11 @@ footer{padding-block:28px 40px;text-align:center;font-size:13px;color:var(--mute
 
   <section id="sobre-mi" aria-labelledby="t-sobre">
     <div class="sec-head">
-      <span class="eyebrow">Hola, soy Serena</span>
+      <span class="eyebrow">Hola, soy Serena Lemarie</span>
       <h2 id="t-sobre">Sobre <span class="s">mí</span></h2>
     </div>
     <div class="about">
-      <figure><img src="media/serena-sobre-mi.jpg" alt="Retrato de Serena"></figure>
+      <figure><img src="media/serena-foto.jpg" alt="Retrato de Serena Lemarie"></figure>
       <div class="txt">
         <p>Hablo de belleza como la hablarías con tu mejor amiga: directo, con humor y sin filtro.</p>
         <p>Escribo mis propios guiones, grabo y edito cada video con subtítulos y textos en pantalla. Mi fuerte son los formatos de opinión y listas, como mis “red flags”, que invitan a comentar y hacen que la gente se quede hasta el final.</p>
@@ -230,16 +234,17 @@ footer{padding-block:28px 40px;text-align:center;font-size:13px;color:var(--mute
     <div class="contact">
       <div>
         <h2 id="t-contact"><span class="s">¿Trabajamos</span> juntas?</h2>
-        <p>Escríbeme por mensaje directo con tu marca, el producto y la fecha que tienes en mente. Te respondo con ideas y tarifas.</p>
+        <p>Escríbeme a mi correo o por mensaje directo con tu marca, el producto y la fecha que tienes en mente. Te respondo con ideas y tarifas.</p>
       </div>
       <div class="links">
+        <div class="mail"><span class="addr" id="addr">sereelemarie@gmail.com</span><button type="button" id="copy">Copiar correo</button></div>
         <a href="https://www.tiktok.com/@serelemar" target="_blank" rel="noopener">TikTok <small>@serelemar ↗</small></a>
         <a href="https://www.instagram.com/serelemar" target="_blank" rel="noopener">Instagram <small>@serelemar ↗</small></a>
       </div>
     </div>
   </section>
 </main>
-<footer>Serena · Creadora UGC · 2026</footer>
+<footer>Serena Lemarie · Creadora UGC · sereelemarie@gmail.com</footer>
 
 <script>
 /* Para agregar un video: copia un bloque, cambia el archivo, el título, la categoría y las etiquetas. */
@@ -291,4 +296,12 @@ function render(){
   filters.appendChild(b);
 });
 render();
+
+const copyBtn = document.getElementById("copy");
+copyBtn.addEventListener("click", () => {
+  const addr = document.getElementById("addr");
+  const done = () => { copyBtn.textContent = "¡Copiado!"; setTimeout(() => copyBtn.textContent = "Copiar correo", 1800); };
+  const fallback = () => { const r = document.createRange(); r.selectNodeContents(addr); const s = getSelection(); s.removeAllRanges(); s.addRange(r); copyBtn.textContent = "Selecciónalo y copia"; };
+  try { navigator.clipboard.writeText(addr.textContent).then(done, fallback); } catch (e) { fallback(); }
+});
 </script>
